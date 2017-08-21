@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>EntityFramework.CodeFirst</id>
+    <version>1.0.7</version>
+    <title>EntityFramework.CodeFirst</title>
+    <authors>Artem Polischuk</authors>
+    <owners>Artem Polischuk</owners>
+    <iconUrl>https://hsto.org/files/fcc/1ca/64c/fcc1ca64c73341fda65175a1532625ae.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Entity Framework Code first get started project structure such as:
+- ApplicationDbContext
+- ApplicationDbInitializer
+- BaseEntity</description>
+    <summary>Entity Framework Code first get started project structure</summary>
+    <releaseNotes>I recommended install latest 1.0.7 vers, this vers fixed all bugs and implementation good codefirst practice.</releaseNotes>
+    <tags>EntityFramework CodeFirst Database ORM CF EF</tags>
+    <dependencies>
+      <dependency id="EntityFramework" version="6.1.3" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Data" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Data.DataSetExtensions" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Data.Entity" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

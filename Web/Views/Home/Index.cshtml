@@ -1,0 +1,21 @@
+﻿@model List<Database.Entities.Product>
+
+
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>Products</h2>
+<div class="row" style="margin-bottom:30px">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <input type="text" id="searchString">
+        <input type="button" value="filter" id="Button1" />
+    </div>
+</div>
+
+<div id="refTable">
+    @{Html.RenderPartial("~/Views/Shared/_Table.cshtml", Model);}
+</div>

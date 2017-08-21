@@ -1,0 +1,74 @@
+﻿@model List<Web.Controllers.HomeController.InvoiceExt>
+
+
+
+@{
+    ViewBag.Title = "Invoices";
+}
+
+<h2>Invoices</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Label("ID")
+        </th>
+        <th>
+            @Html.Label("Title")
+        </th>
+        <th>
+            @Html.Label("Date")
+        </th>
+        <th>
+            @Html.Label("Gross")
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td style="background-color:red; color:white" >
+                @Html.DisplayFor(modelItem => item.Gross)
+            </td>
+        </tr>
+        if (item.Products.Count() > 0)
+        {
+        <tr style="background-color: lightblue">
+
+            <td>
+                @Html.Label("Products")
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        }
+        foreach (var item1 in item.Products)
+        {
+                            
+        <tr style="background-color: lightblue">
+            <td>
+                @Html.DisplayFor(modelItem => item1.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item1.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item1.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item1.Quantity)
+            </td>
+        </tr>
+        
+        }
+    }
+</table>

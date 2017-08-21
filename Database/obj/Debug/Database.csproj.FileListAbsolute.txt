@@ -1,0 +1,12 @@
+C:\DANE\PROJEKTY\Database\Database\bin\Debug\Database.dll.config
+C:\DANE\PROJEKTY\Database\Database\bin\Debug\Database.dll
+C:\DANE\PROJEKTY\Database\Database\bin\Debug\Database.pdb
+C:\DANE\PROJEKTY\Database\Database\bin\Debug\EntityFramework.dll
+C:\DANE\PROJEKTY\Database\Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\DANE\PROJEKTY\Database\Database\bin\Debug\EntityFramework.xml
+C:\DANE\PROJEKTY\Database\Database\bin\Debug\EntityFramework.SqlServer.xml
+C:\DANE\PROJEKTY\Database\Database\obj\Debug\EntityFramework.CodeFirst.Migrations.Init.resources
+C:\DANE\PROJEKTY\Database\Database\obj\Debug\Database.csproj.GenerateResource.Cache
+C:\DANE\PROJEKTY\Database\Database\obj\Debug\Database.dll
+C:\DANE\PROJEKTY\Database\Database\obj\Debug\Database.pdb
+C:\DANE\PROJEKTY\Database\Database\obj\Debug\Database.csprojResolveAssemblyReference.cache
