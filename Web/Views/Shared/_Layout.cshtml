@@ -12,23 +12,6 @@
     <script src="~/Scripts/jquery-3.1.1.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#Button1').click(function () {
-                var val = document.getElementById('searchString').value;
-                $.ajax({
-                    type: 'POST',
-                    dataType: "json",
-                    url: '@Url.Action("Search", "Home")',
-                        data: { searchString: val },
-                        complete: function (data) {
-                            $("#refTable").html(data.responseText);
-                        }
-                    });
-            });
-        });
-
-    </script>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -43,6 +26,9 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         @Html.ActionLink("Products", "Index", "Home")
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("NotSellProducts", "NotSellProducts", "Home")
                     </li>
                     <li class="nav-item">
                         @Html.ActionLink("Invoices", "Invoice", "Home")

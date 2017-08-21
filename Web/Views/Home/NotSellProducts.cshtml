@@ -1,0 +1,45 @@
+﻿@model List<Web.Controllers.HomeController.ProductExt>
+
+
+
+@{
+    ViewBag.Title = "NotSellProducts";
+}
+
+<h2>NotSellProducts</h2>
+<div class="row" style="margin-bottom:30px">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <input type="text" id="searchString">
+        <input type="button" value="filter" id="Button1" />
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Label("ID")
+        </th>
+        <th>
+            @Html.Label("Description")
+        </th>
+        <th>
+            @Html.Label("Price")
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+        </tr>
+    }
+</table>

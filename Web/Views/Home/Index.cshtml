@@ -5,6 +5,21 @@
 @{
     ViewBag.Title = "Products";
 }
+<script>
+    function SearchProducts() {
+        debugger;
+        var val = document.getElementById('searchString').value;
+        $.ajax({
+            type: 'POST',
+            dataType: "json",
+            url: '@Url.Action("Search", "Home")',
+                    data: { searchString: val },
+                    complete: function (data) {
+                        $("#refTable").html(data.responseText);
+                    }
+                });
+    }
+</script>
 
 <h2>Products</h2>
 <div class="row" style="margin-bottom:30px">
@@ -12,7 +27,7 @@
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
         <input type="text" id="searchString">
-        <input type="button" value="filter" id="Button1" />
+        <input type="button" value="filter" id="Button1" onclick="SearchProducts();"/>
     </div>
 </div>
 

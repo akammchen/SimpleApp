@@ -144,6 +144,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Table.cshtml" />
     <Content Include="Views\Home\Invoice.cshtml" />
+    <Content Include="Views\Home\NotSellProducts.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
